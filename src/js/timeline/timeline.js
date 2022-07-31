@@ -75,6 +75,8 @@ export default class TimeLine {
     this.factList.push(factBlock);
 
     factBlock.bindToDOM(this.contentBlock);
+
+    this.contentBlock.scrollTop += this.contentBlock.scrollHeight;
   }
 
   setListeners() {
